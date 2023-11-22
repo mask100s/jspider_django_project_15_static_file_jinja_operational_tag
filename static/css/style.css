@@ -1,0 +1,19 @@
+h1
+{
+  color: rgb(5, 82, 50);
+  background-color: rgba(60, 59, 65, 0.342);
+  opacity: 0.9;
+  box-shadow: 0 0 2px gray;
+  width: 50%;
+  border-radius: 10px;
+}
+
+div
+{
+  height: 300px;
+}
+
+img
+{
+  height: inherit;
+}
