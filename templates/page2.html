@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  <center>
+    <h1>{{ string1 }}</h1>
+
+    <h1>This is for conditional jinja operational tag.</h1>
+
+    {% if a > b %}
+        {{a}} is greatest.
+    {% else %}
+        {{b}} is greatest.
+    {% endif %}
+
+    <br>
+
+    <h1>
+      {% for ch in string2 %}
+          {{ch}} 
+      {% endfor %}
+    </h1>
+    
+    <h1>
+      This is for specific_static_directory jinja operational tag.
+    </h1>
+    
+    <img src="{% static 'images/picture_windows.jpg' %}" alt="">
+
+    <h3>
+      
+      <a href="{% url 'page1' %}">Go to page 1 for generic url mapping and generic url navigation.</a>
+      <br>
+      <a href="{% url 'connect2:page3' %}">Go to page 3.</a>
+      
+    </h3>
+  </center>
+</body>
+</html>
